@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/**** Reset ****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+}
+
+/**** Style général de la page ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5; 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.main__content {
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.digital__clock {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.planner {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.calendar__grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+
+.calendar__day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    color: #c4c4c4;
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task {
+    background-color: #282180;
+    color: #ffffff;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 4px;
+    text-align: center;
+    word-break: break-word;
+    font-size: 0.8em;
+    font-weight: 700;
+    width: 88%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+
+.task:hover,
+.modal__content button:hover,
+.add__task__btn:hover {
+  background-color: #4039a1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal__content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888888;
+    width: 290px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease-out;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+}
+
+input[type="date"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+.modal__content button {
+    background-color: #282180;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 48px;
+    margin: 8px 0;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+.add__task__btn {
+    color: #ffffff;
+    background-color: #282180;
+    padding: 10px 48px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
