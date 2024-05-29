@@ -43,10 +43,16 @@ h1 {
     width: 100%;
     padding-top: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 35px;
     font-weight: 700;
+}
+
+.current__month__year {
+    padding-top: 20px;
+    font-size: 25px;
 }
 
 .planner {
@@ -61,7 +67,6 @@ h1 {
     gap: 10px;
     padding: 20px;
 }
-
 
 .calendar__day {
     display: flex;
