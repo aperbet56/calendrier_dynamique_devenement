@@ -7,7 +7,7 @@ j'ai tiré partie de la puissance de JavaScript pour gérer les interactions des
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/calendrier_dynamique_devenement/
 
 ## Développez avec
 
