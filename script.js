@@ -2,6 +2,7 @@
 const hr = document.querySelector(".hours");
 const min = document.querySelector(".minutes");
 const sec = document.querySelector(".seconds");
+const currentMonthAndYear = document.querySelector(".current__month__year");
 
 // Déclaration de la fonction digitalClock qui va permettre l'affichage de l'heure
 const digitalClock = () => {
@@ -17,6 +18,24 @@ const digitalClock = () => {
   hr.textContent = hours;
   min.textContent = minutes;
   sec.textContent = seconds;
+
+  const monthNames = [
+    "Janvier",
+    "Février",
+    "Mars",
+    "Avril",
+    "Mai",
+    "Juin",
+    "Juillet",
+    "Août",
+    "Septembre",
+    "Octobre",
+    "Novembre",
+    "Décembre",
+  ];
+  let currentMonth = date.getMonth();
+  let currentYear = date.getFullYear();
+  currentMonthAndYear.textContent = `${monthNames[currentMonth]} ${currentYear}`;
 };
 // Appel de la fonction digitalClock toutes les secondes
 setInterval(digitalClock, 1000);
