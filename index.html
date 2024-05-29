@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendrier dynamique d'événement</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calendrier dynamique d'événement</h1>
+    </header>
+    <main class="main__content">
+      <section class="container">
+        <div class="digital__clock">
+          <div class="time">
+            <span class="hours">00</span>: <span class="minutes">00</span>:
+            <span class="seconds">00</span>
+          </div>
+        </div>
+        <div class="planner">
+          <div id="calendar" class="calendar__grid"></div>
+        </div>
+
+        <div id="addTaskModal" class="modal">
+          <div class="modal__content">
+            <span class="close" onclick="closeAddTaskModal()">&times;</span>
+            <h2>Ajouter un événement</h2>
+            <input type="date" id="task__date" />
+            <input
+              type="text"
+              id="task__desc"
+              placeholder="Description de l'événement"
+              autocomplete="off"
+            />
+            <button onclick="addTask()">Ajouter un événement</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <button class="add__task__btn" onclick="showAddTaskModal()">
+        Ajouter un événement
+      </button>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
