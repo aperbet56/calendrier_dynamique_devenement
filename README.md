@@ -1,5 +1,7 @@
 ## CALENDRIER D'EVENEMENT
 
+![Design preview for the project](./img/banner.png)
+
 ## Le challenge
 
 Mon challenge a été de créer un calendrier dynamique avec affichage de l'heure qui non seulement affiche les dates, mais permet également aux utilisateurs d'ajouter, de modifier et de supprimer facilement des événements.
