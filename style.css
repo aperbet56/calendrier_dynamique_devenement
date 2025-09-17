@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     border: none;
     outline: none;
 }
@@ -75,7 +75,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     background-color: #e2daeb;
-    color: #1f1135;
     padding: 15px;
     border-radius: 8px;
     min-height: 70px;
@@ -83,8 +82,6 @@ h1 {
 }
 
 .task {
-    background-color: #ff6e6c;
-    color: #1f1235;
     padding: 12px;
     margin-top: 10px;
     border-radius: 4px;
@@ -93,7 +90,6 @@ h1 {
     font-size: 0.8em;
     font-weight: 700;
     width: 88%;
-    cursor: pointer;
     transition: opacity 0.3s ease-out;
 }
 
@@ -102,6 +98,13 @@ h1 {
 .modal__content button:hover,
 .add__task__btn:hover {
     opacity: 0.8;
+}
+
+.task,
+.modal__content button,
+.add__task__btn {
+    background-color: #ff6e6c;
+    cursor: pointer;
 }
 
 .modal {
@@ -113,7 +116,7 @@ h1 {
     height: 100%;
     z-index: 1;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.69);
 }
 
 .modal__content {
@@ -157,13 +160,10 @@ input[type="text"] {
 }
 
 .modal__content button {
-    background-color: #ff6e6c;
-    color: #1f1235;
     text-transform: uppercase;
     padding: 10px 48px;
     margin: 8px 0;
     border-radius: 14px;
-    cursor: pointer;
     transition: opacity 0.3s ease-out;
 }
 
@@ -174,13 +174,10 @@ input[type="text"] {
 }
 
 .add__task__btn {
-    color: #1f1235;
-    background-color: #ff6e6c;
     padding: 10px 48px;
     border-radius: 20px;
     text-transform: uppercase;
     text-align: center;
-    cursor: pointer;
     transition: opacity 0.3s ease-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
