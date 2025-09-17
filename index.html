@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <h1>Calendrier dynamique d'événement</h1>
+      <h1>Calendrier dynamique d'événement 📅</h1>
     </header>
     <main class="main__content">
       <section class="container">
@@ -40,11 +40,17 @@
           </div>
         </div>
       </section>
+      <div class="btn">
+        <button class="add__task__btn" onclick="showAddTaskModal()">
+          Ajouter un événement
+        </button>
+      </div>
     </main>
     <footer>
-      <button class="add__task__btn" onclick="showAddTaskModal()">
-        Ajouter un événement
-      </button>
+      <p class="footer__text">
+        &copy; Copyright <span class="footer__text__year"></span>. Calendrier
+        dynamique d'événement. <br />Tous droits réservés.
+      </p>
     </footer>
     <script src="script.js"></script>
   </body>
