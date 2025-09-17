@@ -15,13 +15,15 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: #f5f5f5; 
+    background-color: #f4effc;
+    color: #1f1135;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-header, footer {
+header,
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,8 +74,8 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
-    color: #c4c4c4;
+    background-color: #e2daeb;
+    color: #1f1135;
     padding: 15px;
     border-radius: 8px;
     min-height: 70px;
@@ -81,8 +83,8 @@ h1 {
 }
 
 .task {
-    background-color: #282180;
-    color: #ffffff;
+    background-color: #ff6e6c;
+    color: #1f1235;
     padding: 12px;
     margin-top: 10px;
     border-radius: 4px;
@@ -92,14 +94,14 @@ h1 {
     font-weight: 700;
     width: 88%;
     cursor: pointer;
-    transition: background-color 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
 }
 
 
 .task:hover,
 .modal__content button:hover,
 .add__task__btn:hover {
-  background-color: #4039a1;
+    opacity: 0.8;
 }
 
 .modal {
@@ -155,26 +157,39 @@ input[type="text"] {
 }
 
 .modal__content button {
-    background-color: #282180;
-    color: #ffffff;
+    background-color: #ff6e6c;
+    color: #1f1235;
     text-transform: uppercase;
     padding: 10px 48px;
     margin: 8px 0;
     border-radius: 14px;
     cursor: pointer;
-    transition: background-color 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .add__task__btn {
-    color: #ffffff;
-    background-color: #282180;
+    color: #1f1235;
+    background-color: #ff6e6c;
     padding: 10px 48px;
     border-radius: 20px;
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer__text {
+    padding: 25px 15px 15px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4;
 }
 
 /**** Responsive design ****/
@@ -186,19 +201,19 @@ input[type="text"] {
 }
 
 @media screen and (max-width: 992px) {
-    .calendar__grid{
+    .calendar__grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .calendar__grid{
+    .calendar__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 576px) {
-    .calendar__grid{
+    .calendar__grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
