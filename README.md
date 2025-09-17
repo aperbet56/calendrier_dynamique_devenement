@@ -1,6 +1,6 @@
-## CALENDRIER D'EVENEMENT
+## CALENDRIER D'EVENEMENT 📅
 
-![Design preview for the project](./img/banner.png)
+![Design preview for the project](./img/preview.png)
 
 ## Le challenge
 
