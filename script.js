@@ -3,6 +3,7 @@ const hr = document.querySelector(".hours");
 const min = document.querySelector(".minutes");
 const sec = document.querySelector(".seconds");
 const currentMonthAndYear = document.querySelector(".current__month__year");
+const footerCopyrightYear = document.querySelector(".footer__text__year");
 
 // Déclaration de la fonction digitalClock qui va permettre l'affichage de l'heure
 const digitalClock = () => {
@@ -36,6 +37,7 @@ const digitalClock = () => {
   let currentMonth = date.getMonth();
   let currentYear = date.getFullYear();
   currentMonthAndYear.textContent = `${monthNames[currentMonth]} ${currentYear}`;
+  footerCopyrightYear.textContent = `${currentYear}`;
 };
 // Appel de la fonction digitalClock toutes les secondes
 setInterval(digitalClock, 1000);
