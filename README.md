@@ -5,7 +5,10 @@
 ## Le challenge
 
 Mon challenge a été de créer un calendrier dynamique avec affichage de l'heure qui non seulement affiche les dates, mais permet également aux utilisateurs d'ajouter, de modifier et de supprimer facilement des événements.
-j'ai tiré partie de la puissance de JavaScript pour gérer les interactions des utilisateurs, manipuler le DOM et gérer efficacement les données d'événements.
+
+Pour ajouter un événement, il suufit de cliquer sur le bouton "Ajouter un événement". Pour modifier un événement créé, il suffit de lui cliquer dessus. Et enfin, pour supprimer un événement créé, il faut effectuer un clic droit dessus!
+
+La réalisation de ce projet m'a permis de gérer les interactions des utilisateurs, manipuler le DOM et gérer efficacement les données d'événements.
 
 ## Démonstration
 
